@@ -20,3 +20,45 @@ iota client envs
 
 * [IOTA Indexer](https://docs.iota.org/operator/extensions/indexer-functions)
 * [Custom Indexer](https://docs.iota.org/developer/advanced/custom-indexer)
+* [Run an Indexer](https://github.com/iotaledger/iota/tree/develop/crates/iota-indexer)
+
+### Database setup
+
+```console
+cargo install diesel_cli --no-default-features --features postgres
+```
+
+```console
+cd iota/crates/iota-indexer
+diesel setup --database-url="postgres://postgres:postgrespw@localhost/iota_indexer"
+```
+
+### Run the indexer as a writer (Sync worker)
+
+```console
+iota-indexer --db-url "postgres://postgres:postgrespw@localhost/iota_indexer" --rpc-client-url "https://api.testnet.iota.cafe:443"  --fullnode-sync-worker --reset-db
+```
+
+### Run indexer as a reader
+
+```console
+iota-indexer --db-url "postgres://postgres:postgrespw@localhost/iota_indexer" --rpc-client-url "https://api.testnet.iota.cafe:443" --rpc-server-worker
+```
+
+### Issues
+
+* https://github.com/rust-rocksdb/rust-rocksdb/issues/316
+
+## Run GraphQL Interface
+
+```console
+iota-graphql-rpc start-server
+```
+
+## Grafana
+
+user / password: `admin` / `admin`
+
+## Misc
+
+* https://blog.louie.lu/iota/
