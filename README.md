@@ -33,16 +33,10 @@ cd iota/crates/iota-indexer
 diesel setup --database-url="postgres://postgres:postgrespw@localhost/iota_indexer"
 ```
 
-### Run the indexer as a writer (Sync worker)
+### Run indexer
 
 ```console
-iota-indexer --db-url "postgres://postgres:postgrespw@localhost/iota_indexer" --rpc-client-url "https://api.testnet.iota.cafe:443"  --fullnode-sync-worker --reset-db
-```
-
-### Run indexer as a reader
-
-```console
-iota-indexer --db-url "postgres://postgres:postgrespw@localhost/iota_indexer" --rpc-client-url "https://api.testnet.iota.cafe:443" --rpc-server-worker
+iota-indexer --db-url "postgres://postgres:postgrespw@localhost/iota_indexer" --rpc-client-url "https://api.testnet.iota.cafe:443" --fullnode-sync-worker --rpc-server-worker --reset-db
 ```
 
 ### Issues
