@@ -1,0 +1,22 @@
+[package]
+name = "custom-indexer"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+
+[dependencies]
+anyhow = "1.0"
+async-trait = "0.1"
+prometheus = "0.14"
+tokio = "1.44"
+tokio-util = "0.7"
+iota-data-ingestion-core = { git = "https://github.com/iotaledger/iota.git" }
+iota-types = { git = "https://github.com/iotaledger/iota.git" }
+
+[[bin]]
+name = "local_reader"
+path = "src/local_reader.rs"
+
+[[bin]]
+name = "remote_reader"
+path = "src/remote_reader.rs"

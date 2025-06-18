@@ -15,3 +15,8 @@ iota keytool list
 ```console
 iota client envs
 ```
+
+## Indexer
+
+* [IOTA Indexer](https://docs.iota.org/operator/extensions/indexer-functions)
+* [Custom Indexer](https://docs.iota.org/developer/advanced/custom-indexer)
