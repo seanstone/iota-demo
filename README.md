@@ -53,15 +53,10 @@ iota-indexer --db-url "postgres://postgres:postgrespw@localhost/iota_indexer" --
 iota-graphql-rpc start-server --host 0.0.0.0
 ```
 
-## Grafana
-
-user / password: `admin` / `admin`
-
 ## Ports
 
 | Port | Use |
 |---|---|
-|`3000`|grafana|
 |`5432`|postgres|
 |`8000`|graphiql|
 |`9184`|prometheus|
