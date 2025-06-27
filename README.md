@@ -57,6 +57,7 @@ user / password: `admin` / `admin`
 
 | Port | Use |
 |---|---|
+|`5432`|grafana|
 |`5432`|postgres|
 |`8000`|graphiql|
 |`9184`|prometheus|
