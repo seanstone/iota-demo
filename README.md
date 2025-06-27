@@ -45,6 +45,8 @@ iota-indexer --db-url "postgres://postgres:postgrespw@localhost/iota_indexer" --
 
 ## GraphQL Interface
 
+* [iota-graphql-rpc](https://github.com/iotaledger/iota/tree/develop/crates/iota-graphql-rpc)
+
 ### Run GraphQL Interface
 
 ```console
