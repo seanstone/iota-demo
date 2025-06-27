@@ -53,6 +53,14 @@ iota-graphql-rpc start-server
 
 user / password: `admin` / `admin`
 
+## Ports
+
+| Port | Use |
+|---|---|
+|`5432`|postgres|
+|`8000`|graphiql|
+|`9184`|prometheus|
+
 ## Misc
 
 * https://blog.louie.lu/iota/
