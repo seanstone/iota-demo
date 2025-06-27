@@ -53,6 +53,15 @@ iota-indexer --db-url "postgres://postgres:postgrespw@localhost/iota_indexer" --
 iota-graphql-rpc start-server --host 0.0.0.0
 ```
 
+Example query:
+```
+query {
+  address(address: "0xc6e04eba2e895630462736d303a98f49c161f3bb94243ead6eb13a349cfdee90") {
+    iotaNamesDefaultName
+  }	
+}
+```
+
 ## Ports
 
 | Port | Use |
