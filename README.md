@@ -43,7 +43,15 @@ iota-indexer --db-url "postgres://postgres:postgrespw@localhost/iota_indexer" --
 
 * https://github.com/rust-rocksdb/rust-rocksdb/issues/316
 
-## Run GraphQL Interface
+## GraphQL Interface
+
+### Generate config
+
+```console
+iota-graphql-rpc generate-config > iota-graphql-rpc.config
+```
+
+### Run GraphQL Interface
 
 ```console
 iota-graphql-rpc start-server
