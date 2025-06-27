@@ -45,16 +45,10 @@ iota-indexer --db-url "postgres://postgres:postgrespw@localhost/iota_indexer" --
 
 ## GraphQL Interface
 
-### Generate config
-
-```console
-iota-graphql-rpc generate-config > iota-graphql-rpc.config
-```
-
 ### Run GraphQL Interface
 
 ```console
-iota-graphql-rpc start-server
+iota-graphql-rpc start-server --host 0.0.0.0
 ```
 
 ## Grafana
